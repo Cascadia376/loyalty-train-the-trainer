@@ -55,7 +55,7 @@ const SCRIPT_SCENES: Scene[] = [
   {
     title: "How Guests Earn Points",
     list: [
-      "For Every Dollar Spent they Will Earn 100 points",
+      "For Every Dollar Spent they Will Earn 10 points",
       "Bonus Promotions Through the Year",
       "Enrollment bonus: $7.50 worth of points on sign-up"
     ],
