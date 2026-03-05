@@ -430,8 +430,8 @@ export default function App() {
 
       {/* Branding */}
       {currentScene === 0 && (
-        <div className="absolute top-4 md:top-6 left-1/2 -translate-x-1/2 z-20">
-          <img src="/logo.png" alt="Cascadia" className="w-[170px] md:w-[230px] h-auto" />
+        <div className="absolute top-10 md:top-14 left-1/2 -translate-x-1/2 z-20">
+          <img src="/logo.png" alt="Cascadia" className="w-[80px] md:w-[110px] h-auto" />
         </div>
       )}
 
