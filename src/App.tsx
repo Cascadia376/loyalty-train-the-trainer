@@ -57,7 +57,7 @@ const SCRIPT_SCENES: Scene[] = [
     list: [
       "For Every Dollar Spent they Will Earn 10 points",
       "Bonus Promotions Through the Year",
-      "Enrollment bonus: $7.50 worth of points on sign-up"
+      "Enrollment bonus: Early Sign Up Bonuses"
     ],
     footer: "Points are earned automatically when:\n• Phone/email is entered\n• Guest is enrolled"
   },
