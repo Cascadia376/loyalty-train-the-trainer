@@ -429,13 +429,13 @@ export default function App() {
       {/* Branding */}
       {currentScene === 0 && (
         <div className="absolute top-4 md:top-6 left-1/2 -translate-x-1/2 z-20">
-          <img src="/logo-hero.png" alt="Cascadia" className="w-[170px] md:w-[230px] h-auto" />
+          <img src="/logo.png" alt="Cascadia" className="w-[170px] md:w-[230px] h-auto" />
         </div>
       )}
 
       {currentScene > 0 && (
         <div className="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
-          <img src="/logo-footer.png" alt="Cascadia" className="w-[80px] md:w-[110px] h-auto opacity-90" />
+          <img src="/logo.png" alt="Cascadia" className="w-[80px] md:w-[110px] h-auto opacity-90" />
         </div>
       )}
 
