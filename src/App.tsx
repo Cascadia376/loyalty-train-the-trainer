@@ -40,7 +40,8 @@ const SCRIPT_SCENES: Scene[] = [
   },
   {
     title: "Why don’t I just go to Cascadia?",
-    subtitle: "Creating moments where someone standing in another store thinks:"
+    subtitle: "Creating moments where someone standing in another store thinks:",
+    noUppercase: true
   },
   {
     title: "The Den",
@@ -210,6 +211,7 @@ export default function App() {
   const [currentScene, setCurrentScene] = useState(0);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const isSlideThree = currentScene === 2;
 
   const handlePrev = useCallback(() => {
     if (currentScene > 0) {
@@ -270,7 +272,7 @@ export default function App() {
                   className="w-[300px] md:w-[420px] lg:w-[520px] mx-auto mb-3"
                 />
                 {scene.subtitle && (
-                  <h2 className="font-serif italic text-xl md:text-3xl text-brand-brown/90 mb-4 leading-relaxed">
+                  <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
                     {scene.subtitle}
                   </h2>
                 )}
@@ -278,7 +280,7 @@ export default function App() {
             ) : (
               <>
                 {scene.subtitle && (
-                  <h2 className="font-serif italic text-xl md:text-3xl text-brand-brown/90 mb-4 leading-relaxed">
+                  <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
                     {scene.subtitle}
                   </h2>
                 )}
@@ -480,3 +482,4 @@ export default function App() {
     </div>
   );
 }
+
