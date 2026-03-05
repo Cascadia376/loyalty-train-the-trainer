@@ -172,10 +172,10 @@ const SCRIPT_SCENES: Scene[] = [
     footer: "Correction example: “Keep the script shorter — let’s try it again.”"
   },
   {
-    title: "“You qualify for bonus points — there’s a QR code if you'd like to sign up later.”",
+    title: "Are you a loyalty member?\nIf not: “You qualify for bonus points today. If you'd like, you can scan the QR code to join now, or next time you're in the store.”",
     subtitle: "Busy Line Protocol",
     noUppercase: true,
-    footer: "We never slow down service."
+    footer: "We never slow down service. Use this when there are 4 people in line and there is no back up."
   },
   {
     title: "Launch Timeline",
@@ -186,7 +186,7 @@ const SCRIPT_SCENES: Scene[] = [
     ]
   },
   {
-    title: "Manager Responsibilities",
+    title: "Manager Expectations",
     listTitle: "Managers must:",
     list: [
       "Train their teams",
@@ -199,7 +199,7 @@ const SCRIPT_SCENES: Scene[] = [
   },
   {
     title: "“Why don’t I just go to Cascadia?”",
-    content: "Loyalty programs don’t succeed because of points.\n\nThey succeed because of consistent behavior.\n\nIf every guest receives a confident invitation, loyalty will grow naturally.\n\nAnd eventually, someone standing in another store will think:\n\n“Why don’t I just go to Cascadia?”\n\nThat’s what we’re building.",
+    content: "Loyalty programs don’t succeed because of points. They succeed because of consistent behavior. If every guest receives a confident invitation, loyalty will grow naturally. And eventually, someone standing in another store will think: “Why don’t I just go to Cascadia?” That’s what we’re building.",
     noUppercase: true
   }
 ];
@@ -268,7 +268,7 @@ export default function App() {
                 <img
                   src="/The-Den_logo-brown.png?v=20260305"
                   alt="The Den"
-                  className="w-[300px] md:w-[420px] lg:w-[520px] mx-auto mb-3"
+                  className="w-[300px] md:w-[420px] lg:w-[520px] mx-auto mb-8"
                 />
                 {scene.subtitle && (
                   <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
@@ -283,13 +283,13 @@ export default function App() {
                     {scene.subtitle}
                   </h2>
                 )}
-                <h1 className={`font-display font-bold tracking-tight mb-4 leading-[1.06] text-brand-brown whitespace-pre-wrap ${scene.noUppercase ? '' : 'uppercase'} ${scene.title.length > 50 ? 'text-3xl md:text-5xl lg:text-6xl' : scene.title.length > 20 ? 'text-4xl md:text-6xl lg:text-7xl' : 'text-5xl md:text-7xl lg:text-8xl'}`}>
+                <h1 className={`font-display font-bold tracking-tight mb-8 leading-[1.06] text-brand-brown whitespace-pre-wrap ${scene.noUppercase ? '' : 'uppercase'} ${scene.title.length > 50 ? 'text-3xl md:text-5xl lg:text-6xl' : scene.title.length > 20 ? 'text-4xl md:text-6xl lg:text-7xl' : 'text-5xl md:text-7xl lg:text-8xl'}`}>
                   {scene.title}
                 </h1>
               </>
             )}
 
-            <div className="h-[2px] w-12 mx-auto mb-6 bg-brand-red" />
+            <div className="h-[2px] w-12 mx-auto mb-8 bg-brand-red" />
 
             {/* List Rendering */}
             {scene.list && (
