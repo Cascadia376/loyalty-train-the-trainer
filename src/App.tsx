@@ -45,7 +45,6 @@ const SCRIPT_SCENES: Scene[] = [
   },
   {
     title: "The Den",
-    subtitle: "Our Free Loyalty Program That:",
     list: [
       "Tracks Purchases",
       "Rewards Guests with points",
@@ -267,7 +266,7 @@ export default function App() {
             {currentScene === 3 ? (
               <>
                 <img
-                  src="/The-Den_logo-brown.png"
+                  src="/The-Den_logo-brown.png?v=20260305"
                   alt="The Den"
                   className="w-[300px] md:w-[420px] lg:w-[520px] mx-auto mb-3"
                 />
