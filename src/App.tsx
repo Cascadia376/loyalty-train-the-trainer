@@ -436,8 +436,8 @@ export default function App() {
       )}
 
       {currentScene > 0 && (
-        <div className="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
-          <img src="/logo.png" alt="Cascadia" className="w-[80px] md:w-[110px] h-auto opacity-90" />
+        <div className="absolute bottom-4 md:bottom-5 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+          <img src="/logo.png" alt="Cascadia" className="w-[64px] md:w-[88px] h-auto opacity-90" />
         </div>
       )}
 
