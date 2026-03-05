@@ -76,12 +76,12 @@ const SCRIPT_SCENES: Scene[] = [
       {
         name: "Black Bear",
         icon: "🐻",
-        details: ["MID TIER", "12 pts / $1 spent", "10,000–29,999 PTS (ANNUAL RESET)", "Earned after ~$1,000 spend", "Birthday Rewards", "Member Sales"]
+        details: ["MID TIER", "10 pts / $1 spent", "10,000–49,999 PTS (ANNUAL RESET)", "Earned after ~$1,000 spend", "Birthday Rewards", "Member Sales"]
       },
       {
         name: "Grizzly",
         icon: "👑",
-        details: ["VIP STATUS", "15 pts / $1 spent", "30,000+ PTS (ANNUAL RESET)", "Earned after ~$3,000 spend", "Birthday Rewards", "Member Sales"]
+        details: ["VIP STATUS", "10 pts / $1 spent", "50,000+ PTS (ANNUAL RESET)", "Earned after ~$3,000 spend", "Birthday Rewards", "Member Sales"]
       }
     ]
   },
@@ -336,7 +336,7 @@ export default function App() {
                     </div>
                     <ul className="space-y-2">
                       {tier.details.map((detail, j) => (
-                        <li key={j} className="text-[10px] font-mono uppercase tracking-[0.12em] text-brand-dark/70 border-b border-brand-brown/5 pb-1 last:border-0">
+                        <li key={j} className="text-sm md:text-base font-mono uppercase tracking-[0.08em] text-black border-b border-brand-brown/10 pb-1 last:border-0">
                           {detail}
                         </li>
                       ))}
