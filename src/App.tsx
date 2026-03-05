@@ -151,7 +151,7 @@ const SCRIPT_SCENES: Scene[] = [
   {
     title: "Behavioral Coaching",
     subtitle: "Focus on consistency, not conversion.",
-    content: "The goal of coaching is to ensure every guest receives a confident invitation, regardless of the outcome.",
+    content: "The goal is to ensure every guest receives an invitation, regardless of the outcome.",
     listTitle: "What to Observe:",
     list: [
       "Confidence in the delivery",
