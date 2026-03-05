@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-brown: #331A0F;
+  --color-brand-red: #D72323;
+  --color-brand-cream: #F9F8F6;
+  --color-brand-bg-alt: #F2F0EB;
+  --color-brand-dark: #1F1F1F;
+  --color-brand-green: #10B981;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-dark antialiased overflow-hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F8F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D72323;
+  border-radius: 4px;
+}
+
+.glass {
+  @apply bg-white/40 backdrop-blur-xl border border-black/5;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(215, 35, 35, 0.1);
+}
