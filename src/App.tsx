@@ -172,7 +172,7 @@ const SCRIPT_SCENES: Scene[] = [
     footer: "Correction example: “Keep the script shorter — let’s try it again.”"
   },
   {
-    title: "Are you a loyalty member?\nIf not: “You qualify for bonus points today. If you'd like, you can scan the QR code to join now, or next time you're in the store.”",
+    title: "Are you a member of our new loyalty program?\nFor the first two weeks only, new members get 5,000 bonus points.\nYou can scan this QR code to join now, or next time you're in the store.",
     subtitle: "Busy Line Protocol",
     noUppercase: true,
     footer: "We never slow down service. Use this when there are 4 people in line and there is no back up."
