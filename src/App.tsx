@@ -111,7 +111,7 @@ const SCRIPT_SCENES: Scene[] = [
     ]
   },
   {
-    title: "Are you a member of our new loyalty program?\nYou qualify for 5000 bonus points right now.\nCan I set that up and add them to your account?",
+    title: "Are you a member of our new loyalty program?\nFor the first two weeks only, new members get 5,000 bonus points.\nCan I set that up for you?",
     subtitle: "The Invitation",
     noUppercase: true,
     listTitle: "Key Coaching Points",
