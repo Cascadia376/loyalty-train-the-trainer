@@ -64,7 +64,7 @@ const SCRIPT_SCENES: Scene[] = [
   },
   {
     title: "How Guests Redeem Points",
-    content: "1000 Points = $1.00 OFF\n\nRedeem Instantly at checkout for any dollar amount. No complex tiers, no blackout dates."
+    content: "1000 Points = $1.00 OFF\n\nRedeem Instantly at checkout for any dollar amount."
   },
   {
     title: "Three Tiers of Loyalty",
