@@ -194,8 +194,7 @@ const SCRIPT_SCENES: Scene[] = [
       "Train their teams",
       "Role-play the script",
       "Observe transactions",
-      "Reinforce behavior daily",
-      "Review loyalty dashboard metrics"
+      "Reinforce behavior daily"
     ],
     footer: "Managers set the tone for adoption."
   },
