@@ -76,12 +76,12 @@ const SCRIPT_SCENES: Scene[] = [
       {
         name: "Black Bear",
         icon: "🐻",
-        details: ["MID TIER", "10 pts / $1 spent", "10,000–49,999 PTS (ANNUAL RESET)", "Earned after ~$1,000 spend", "Birthday Rewards", "Member Sales"]
+        details: ["MID TIER", "12 pts / $1 spent", "10,000–49,999 PTS (ANNUAL RESET)", "Earned after ~$1,000 spend", "Birthday Rewards", "Member Sales"]
       },
       {
         name: "Grizzly",
         icon: "👑",
-        details: ["VIP STATUS", "10 pts / $1 spent", "50,000+ PTS (ANNUAL RESET)", "Earned after ~$3,000 spend", "Birthday Rewards", "Member Sales"]
+        details: ["VIP STATUS", "15 pts / $1 spent", "50,000+ PTS (ANNUAL RESET)", "Earned after ~$3,000 spend", "Birthday Rewards", "Member Sales"]
       }
     ]
   },
