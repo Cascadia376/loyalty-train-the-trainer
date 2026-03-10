@@ -267,11 +267,6 @@ export default function App() {
             {/* Conditional Layout for Slide 4 vs Others */}
             {currentScene === 3 ? (
               <>
-                <img
-                  src="/The-Den_logo-brown.png?v=20260305"
-                  alt="The Den"
-                  className="w-[220px] md:w-[300px] lg:w-[380px] mx-auto mb-6"
-                />
                 {scene.subtitle && (
                   <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
                     {scene.subtitle}
