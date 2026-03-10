@@ -180,9 +180,10 @@ const SCRIPT_SCENES: Scene[] = [
   {
     title: "Launch Timeline",
     list: [
-      "Roadshow",
+      "Roadshow - March 16 - April 1",
       "Team Training",
-      "Launch Week"
+      "Launch Week - April 3-10",
+      "Bonus Point until April 17"
     ]
   },
   {
