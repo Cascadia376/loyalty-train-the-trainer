@@ -269,7 +269,7 @@ export default function App() {
                 <img
                   src="/The-Den_logo-brown.png?v=20260305"
                   alt="The Den"
-                  className="w-[300px] md:w-[420px] lg:w-[520px] mx-auto mb-8"
+                  className="w-[220px] md:w-[300px] lg:w-[380px] mx-auto mb-6"
                 />
                 {scene.subtitle && (
                   <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
