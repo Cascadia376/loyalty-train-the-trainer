@@ -20,6 +20,7 @@ interface Scene {
   subtitle?: string;
   content?: string;
   list?: string[];
+  emphasisList?: string[];
   listTitle?: string;
   footer?: string;
   tiers?: Tier[];
@@ -72,28 +73,31 @@ const SCRIPT_SCENES: Scene[] = [
       {
         name: "Cub",
         icon: "🐻",
-        details: ["ENTRY LEVEL", "10 pts / $1 spent", "0–9,999 PTS (ANNUAL RESET)", "Birthday Rewards", "Member Sales"]
+        details: ["ENTRY LEVEL", "10 pts / $1 spent", "0–9,999 PTS (ANNUAL RESET)", "Birthday Rewards", "Member Savings"]
       },
       {
         name: "Black Bear",
         icon: "🐻",
-        details: ["MID TIER", "12 pts / $1 spent", "10,000–49,999 PTS (ANNUAL RESET)", "Earned after ~$1,000 spend", "Birthday Rewards", "Member Sales"]
+        details: ["MID TIER", "12 pts / $1 spent", "10,000–49,999 PTS (ANNUAL RESET)", "Earned after ~$1,000 spend", "Birthday Rewards", "Member Savings"]
       },
       {
         name: "Grizzly",
         icon: "👑",
-        details: ["VIP STATUS", "15 pts / $1 spent", "50,000+ PTS (ANNUAL RESET)", "Earned after ~$3,000 spend", "Birthday Rewards", "Member Sales"]
+        details: ["VIP STATUS", "15 pts / $1 spent", "50,000+ PTS (ANNUAL RESET)", "Earned after ~$3,000 spend", "Birthday Rewards", "Member Savings"]
       }
     ]
   },
   {
-    title: "What Staff Need to Know",
-    subtitle: "Frontline staff do NOT need to memorize everything.",
+    title: "What the Team Needs to Know",
+    subtitle: "Team Members do NOT need to memorize everything.",
     list: [
       "It’s free",
       "Guests earn points on purchases",
       "Points convert into rewards",
       "Higher spend unlocks tiers"
+    ],
+    emphasisList: [
+      "Guests qualify for an additional 5,000 pts with sign up before April 17th."
     ],
     footer: "If guests want more detail, managers can support."
   },
@@ -112,7 +116,7 @@ const SCRIPT_SCENES: Scene[] = [
     ]
   },
   {
-    title: "Are you a member of our new loyalty program?\nFor the first two weeks only, new members get 5,000 bonus points.\nCan I set that up for you?",
+    title: "Are you a member of our new loyalty program?\nUntil April 17th, new members get 5,000 bonus points.\nCan I set that up for you?",
     subtitle: "The Invitation",
     noUppercase: true,
     listTitle: "Key Coaching Points",
@@ -121,6 +125,18 @@ const SCRIPT_SCENES: Scene[] = [
       "No over-explaining",
       "Natural delivery",
       "Short and clear"
+    ]
+  },
+  {
+    title: "“That’s Okay. If you decide to later, there’s a QR code you can use.”",
+    subtitle: "If They Say No",
+    noUppercase: true,
+    listTitle: "Important:",
+    list: [
+      "Move on",
+      "No second attempt",
+      "No pressure",
+      "No awkward pause"
     ]
   },
   {
@@ -138,16 +154,11 @@ const SCRIPT_SCENES: Scene[] = [
     video: "/pos_main%202026-03-04%2015-51-27.mp4"
   },
   {
-    title: "“That’s Okay. If you decide to later, there’s a QR code you can use.”",
-    subtitle: "If They Say No",
+    title: "Are you a member of our new loyalty program?",
+    subtitle: "Busy Line Protocol",
     noUppercase: true,
-    listTitle: "Important:",
-    list: [
-      "Move on",
-      "No second attempt",
-      "No pressure",
-      "No awkward pause"
-    ]
+    content: "For the first two weeks only, new members get 5,000 bonus points. You can scan this QR code to join now, or next time you're in the store.",
+    footer: "We never slow down service. Use this when there are 4 people in line and there is no back up."
   },
   {
     title: "Behavioural Coaching",
@@ -171,13 +182,6 @@ const SCRIPT_SCENES: Scene[] = [
       "Persuasion attempts"
     ],
     footer: "Correction example: “Keep the script shorter — let’s try it again.”"
-  },
-  {
-    title: "Are you a member of our new loyalty program?",
-    subtitle: "Busy Line Protocol",
-    noUppercase: true,
-    content: "For the first two weeks only, new members get 5,000 bonus points. You can scan this QR code to join now, or next time you're in the store.",
-    footer: "We never slow down service. Use this when there are 4 people in line and there is no back up."
   },
   {
     title: "Launch Timeline",
@@ -309,6 +313,16 @@ export default function App() {
                     </motion.div>
                   ))}
                 </div>
+                {scene.emphasisList && (
+                  <div className="mt-4 space-y-2">
+                    {scene.emphasisList.map((item, i) => (
+                      <div key={i} className="flex items-start gap-3 text-left text-lg md:text-2xl text-brand-red font-semibold">
+                        <ChevronRight className="mt-1 flex-shrink-0 text-brand-red" size={18} />
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
@@ -477,4 +491,7 @@ export default function App() {
     </div>
   );
 }
+
+
+
 
