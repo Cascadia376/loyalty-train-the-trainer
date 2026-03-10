@@ -40,7 +40,7 @@ const SCRIPT_SCENES: Scene[] = [
   },
   {
     title: "Why don’t I just go to Cascadia?",
-    subtitle: "Creating moments where someone standing in another store thinks:",
+    subtitle: "Give guests a reason to choose Cascadia even when other options are nearby:",
     noUppercase: true
   },
   {
@@ -211,7 +211,6 @@ export default function App() {
   const [currentScene, setCurrentScene] = useState(0);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const isSlideThree = currentScene === 2;
 
   const handlePrev = useCallback(() => {
     if (currentScene > 0) {
@@ -267,7 +266,7 @@ export default function App() {
             {currentScene === 3 ? (
               <>
                 {scene.subtitle && (
-                  <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
+                  <h2 className="font-serif italic text-xl md:text-3xl text-brand-brown/90 mb-4 leading-relaxed">
                     {scene.subtitle}
                   </h2>
                 )}
@@ -275,7 +274,7 @@ export default function App() {
             ) : (
               <>
                 {scene.subtitle && (
-                  <h2 className={`text-xl md:text-3xl mb-4 leading-relaxed ${isSlideThree ? 'font-sans not-italic font-semibold text-brand-dark' : 'font-serif italic text-brand-brown/90'}`}>
+                  <h2 className="font-serif italic text-xl md:text-3xl text-brand-brown/90 mb-4 leading-relaxed">
                     {scene.subtitle}
                   </h2>
                 )}
